@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia sẻ nhạc</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" sizes="16x16"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS Bootstrap Offline -->
+    <link rel="stylesheet" href="./assets/bootstrapcss/bootstrap.min.css">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Begin Header -->   
+    <header>
+        <!-- Begin header main -->
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="logo">
+                            <a href="#"><img src="./assets/images/logo.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-10">
+                                <form action="#" method="POST">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="search"><i class="fas fa-search my-search"></i></span>
+                                        <input name="search" type="search" class="form-control" placeholder="Nhập bài hát, video, tên nghệ sĩ bạn cần tìm" aria-label="Search" aria-describedby="search">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-2 my-icon">
+                                <i class="fas fa-history my-history"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 my-login">
+                        <p class="text-white login"><a class="text-white" href="#">Đăng nhập</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header main -->
+
+        <!-- Begin header bottom -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav my-nav my-2">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Xếp Hạng</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">BXH Hôm Nay</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">BXH Tuần Này</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">BXH Tháng này</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">BXH Năm 2020</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">BXH Năm 2021</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Video Clip</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Việt Nam</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video US-UK</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Hoa</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Hàn</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Live</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Hài</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Nhật</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Pháp</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Video Nước Khác</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Việt Nam</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Pop, Rock</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Rap, Hiphop</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Dance, Remix</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc truyền thống</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">US-UK</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Pop, Rock</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Rap, Hiphop</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Dance, Remix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Nhạc Hoa</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Pop, Rock</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Rap, Hiphop</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Dance, Remix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Nhạc Hàn</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Pop, Rock</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Rap, Hiphop</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Dance, Remix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Nhạc Nhật</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Pop, Rock</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Rap, Hiphop</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Dance, Remix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Nhạc Pháp</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Pop, Rock</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Rap, Hiphop</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Dance, Remix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-link txt" href="#">Nhạc khác</a>
+                                <ul class="nav my-nav my-nav-1">
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Pop, Rock</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Rap, Hiphop</a>
+                                    </li>
+                                    <li>
+                                        <a class="my-link txt" href="#">Nhạc Dance, Remix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-3 my-1">
+                                <div class="dropdown my-dropdown">
+                                    <button class="btn btn-secondary btn-tran my-dot" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h my-dot"></i>
+                                    </button>
+                                    <ul class="dropdown-menu my-drop" aria-labelledby="dropdownMenuButton1">
+                                        <div class="drop-top mx-5">
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">XẾP HẠNG</p>
+                                                <li class="nav-link"><a class="my-link" href="#">BXH Hôm nay</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">BXH Tuần Này</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">BXH Tháng 9</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">BXH Năm 2017</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">BXH Năm 2018</a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">Video Clip</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Việt Nam</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video US-UK</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Hoa</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Hàn</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Live</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Hài</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Nhật</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Pháp</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Video Nước khác</a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">Việt Nam</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Pop, Rock</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Rap, Hiphop</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Dance, Remix</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Truyền Thống</a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">US-UK</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Pop, Rock</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Rap, Hiphop</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Dance, Remix</a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">Nhạc Hoa</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Pop, Rock</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Rap, Hiphop</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Dance, Remix</a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">Nhạc Hàn</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Pop, Rock</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Rap, Hiphop</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Dance, Remix</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="drop-bottom mx-5 pt-3">
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">Nhạc Nhật</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Pop, Rock</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Rap, Hiphop</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Dance, Remix</a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">Nhạc Khác</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Pop, Rock</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Rap, Hiphop</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Dance, Remix</a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <p class="mx-2 my-2 px-2 border-left">Nhạc Nước Khác</p>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Pop, Rock</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Rap, Hiphop</a></li>
+                                                <li class="nav-link"><a class="my-link" href="#">Nhạc Dance, Remix</a></li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link my-upload" href="#">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    Upload
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header-bottom -->
+    </header>
+    <!-- End header -->
+
+    <!-- Begin banner -->
+    <div class="banner mx-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./assets/images/banner.jpg" alt="Banner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End banner -->
+
+    <!-- Begin slider -->
+    <?php $i = 1; ?>
+    <div class="featured-song px-10 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/vandam.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">1. Vạn Dặm</a>
+                                                    <a class="sub-txt my-link" href="#">INTO1</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/yeuroiyeu.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">2. Yêu rồi yêu</a>
+                                                    <a class="sub-txt my-link" href="#">Tóc tiên</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/henyeu.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">3. Hẹn yêu</a>
+                                                    <a class="sub-txt my-link" href="#">Minh Vương M4U</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/rapviet.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">4. Rap việt mùa 2 tập 13</a>
+                                                    <a class="sub-txt my-link" href="#">Dlow</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/rapviet.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">5. Rap việt mùa 2 tập 11</a>
+                                                    <a class="sub-txt my-link" href="#">Vsoul/a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                   
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/bautroidaysaokhongbanganh.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">6. Bầu trời đầy sao không bằng anh</a>
+                                                    <a class="sub-txt my-link" href="#">ycccc</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/firstimpact.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">7. First Impact</a>
+                                                    <a class="sub-txt my-link" href="#">Kep1er</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/dawnfm.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">8. Dawn FM</a>
+                                                    <a class="sub-txt my-link" href="#">The Weeknd</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/khongtronvennua.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">9. Không trọn vẹn nữa</a>
+                                                    <a class="sub-txt my-link" href="#">Châu khải Phong</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-20">
+                                            <div class="box">
+                                                <div class="box-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/rapviet.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="box-content">
+                                                    <a class="txt txt-bold my-link" href="#">10. Rap việt mùa 2 tập 11</a>
+                                                    <a class="sub-txt my-link" href="#">B-wine</a>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider -->
+    <!-- End -->
+    <div class="main px-10 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <!-- Begin -->
+                    <div class="row">
+                        <div class="col-10">
+                            <h3 class="title">Album mới nhất 2022</h3>
+                        </div>
+                        <div class="col-2">
+                            <a class="float-end my-sub-link" href="#">Xem tất cả</a>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/bacthaytamly.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Bậc thầy tâm lý</a>
+                                    <a class="sub-txt my-link" href="#">Dương Tử
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/theoutcast.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">The OutCast</a>
+                                    <a class="sub-txt my-link" href="#">Dyryth
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/khactenbanvaocacvisao.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Khắc tên bạn vào các vì sao</a>
+                                    <a class="sub-txt my-link" href="#">An Chỉ Nghi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/imaginelove.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Imagine Love</a>
+                                    <a class="sub-txt my-link" href="#">Miyeon (G)I-DLE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/labandaboulevard.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">La Banda Boulevard</a>
+                                    <a class="sub-txt my-link" href="#">Leandro Da Silva
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/tamhuuduon.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Tâm hữu dư ôn</a>
+                                    <a class="sub-txt my-link" href="#">Trần Thụy
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/tinhnguyen.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Tình nguyện</a>
+                                    <a class="sub-txt my-link" href="#">Đại Kha
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/inmyhouse.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">In My House</a></a>
+                                    <a class="sub-txt my-link" href="#">Kura
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/lakhatvongtinhyeu.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Là khát vọng tình yêu</a>
+                                    <a class="sub-txt my-link" href="#">Phòng Đông Đích Miêu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/chucmungnammoiankhangthingvuong.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Chúc mừng năm mới an khang thịnh vượng</a>
+                                    <a class="sub-txt my-link" href="#">Hồng Tường Vi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhvn.png" class="d-block w-100" alt="...">
+                                                <p class = "all-rank">BXH VIỆT NAM</p>
+                                            </div>
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhvietvideo.png" class="d-block w-100" alt="...">
+                                                <p class = "all-rank">BXH VIỆT VIDEO</p>
+                                            </div>
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhusuk.png" class="d-block w-100" alt="...">
+                                                <p class ="all-rank">BXH US-UK</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhnhachoa.png" class="d-block w-100" alt="...">
+                                                <p class = "all-rank">BXH NHẠC HOA</p>
+                                            </div>
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhnhachan.png" class="d-block w-100" alt="...">
+                                                <p class = "all-rank">BXH NHẠC HÀN</p>
+                                            </div>
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhnhacnhat.png" class="d-block w-100" alt="...">
+                                                <p class ="all-rank">BXH NHẠC NHẬT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhnuockhac.png" class="d-block w-100" alt="...">
+                                                <p class = "all-rank">BXH NHẠC NHÂT</p>
+                                            </div>
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhbeatplayback.png" class="d-block w-100" alt="...">
+                                                <p class = "all-rank">BXH BEAT PLAYBACK</p>
+                                            </div>
+                                            <div class="col-4 mid">
+                                                <img src="./assets/images/bxhvn.png" class="d-block w-100" alt="...">
+                                                <p class ="all-rank">BXH VIỆT NAM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <!-- Begin Bài Hát Mới Chia Sẻ -->
+                        <div class="col-6">
+                            <div class="row py-5">
+                                <div class="col-8">
+                                    <h3 class="title">Bài hát mới chia sẻ</h3>
+                                </div>
+                                <div class="col-4">
+                                    <a class="float-end my-sub-link" href="#">Xem tất cả</a>
+                                </div>
+
+
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/tamtu.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Tâm Tư</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Bằng Cường</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-01-03</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>1222</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/bietemthuongnguoikhac.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Biết Em Thương Người Khác</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Trương Khải Minh</a></a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-01-06</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>1242</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/tinhcogapcotinhyeu.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Tình Cờ Gặp Cố Người Yêu</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Shine Thành Anh</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-02-03</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>2322</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/xuanthudongha.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Xuân Thu Đông Hạ</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Đàm Tinh</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-04-23</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>2312</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/thunglunghong.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Thung Lũng Hồng</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Thanh Lan</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-01-03</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>1222</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/mevethienthu.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Mẹ Về Thiên Thu</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Quỳnh Trang</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-06-12</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>123</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/tetnayconseve.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Tết Này Con Sẽ Về</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Bùi Công Nam</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-02-03</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>1222</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/massaranadaichi.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Massarana Daichi</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Ai Higuchi</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-02-23</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>2314</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/dungcoituichilamotchucuu.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Đừng coi tui chỉ là một chú cừu</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Châu Bút Sướng</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-05-23</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>223</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="col-12 py-3">
+                                        <div class="row my-sing">
+                                            <div class="col-4">
+                                                <a href="#"><img src="./assets/images/airplanemode.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="name-sing">
+                                                    <p class="txt-bold dp-block"><a class="my-link" href="#">Air Planemode</a></p>
+                                                    <p class="sub-txt dp-block">
+                                                        <a class="sub-txt my-link" href="#">Changmin</a>
+                                                    </p>
+                                                    <p class="txt-red">Lossless</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-03-12</p>
+                                                <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>2233</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+
+
+                            </div>
+                        </div>
+                        <!-- End Bài Hát Mới Chia Sẻ -->
+
+                        <!-- Begin Download mới nhất -->
+                        <div class="col-6">
+                        <div class="row py-5">
+                                <div class="col-8">
+                                    <h3 class="title">Download mới nhất</h3>
+                                </div>
+                                <div class="col-4">
+                                    <a class="float-end my-sub-link" href="#">Xem tất cả</a>
+                                </div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/emtinlaanhsai.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Em Tin Là Anh Sai</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Sha Băng</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-02-12</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>2233</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/wildestdreams.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Wildest Dreams</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Madilyn BaiLey</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-05-23</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>3413</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/emhuathenao.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Em Hứa Thế Nào</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Như Việt</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-01-12</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>2233</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/loungeact.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Lounge Act</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Nirvana</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-01-12</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>23213</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/thamthuongtromnho.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Thầm Thương Trộm Nhớ</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Miu Lê</a></a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-01-12</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>3233</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/stayaway.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Stay Away</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Nirvana</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-01-22</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>1233</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/thriftshop.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Thrift Shop</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Marklemore</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-02-02</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>12233</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/onaplain.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">On A Plain</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Nirvana</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-03-23</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>12443</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/trieuchau.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Triều Châu</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Nguyễn Đức</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-04-23</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>1233</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing">
+                                        <div class="col-4">
+                                            <a href="#"><img src="./assets/images/thuongchongotchobui.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Thương Cho Ngọt Cho Bùi</a></p>
+                                                <p class="sub-txt dp-block">
+                                                    <a class="sub-txt my-link" href="#">Miu Lê</a>
+                                                </p>
+                                                <p class="txt-red">Lossless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="txt"><i class="far fa-clock mx-1 my-1"></i>2022-05-28</p>
+                                            <p class="txt"><i class="fas fa-headset mx-1 my-1"></i>7253</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Download mới nhất -->
+
+                    <!-- Begin slider2 -->
+                    <div class="row">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="row">
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/romance.png" class="d-block w-100" alt="...">
+                                            <p class = "all-rank">Romance</p>
+                                        </div>
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/sleep.png" class="d-block w-100" alt="...">
+                                            <p class = "all-rank">Sleep</p>
+                                        </div>
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/gym.png" class="d-block w-100" alt="...">
+                                            <p class ="all-rank">Gym</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <div class="row">
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/dance.png" class="d-block w-100" alt="...">
+                                            <p class = "all-rank">Dance</p>
+                                        </div>
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/work.png" class="d-block w-100" alt="...">
+                                            <p class = "all-rank">Work</p>
+                                        </div>
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/coffee.png" class="d-block w-100" alt="...">
+                                            <p class ="all-rank">Coffee</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/game.png" class="d-block w-100" alt="...">
+                                            <p class = "all-rank">Game</p>
+                                        </div>
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/travel.png" class="d-block w-100" alt="...">
+                                            <p class = "all-rank">Travel</p>
+                                        </div>
+                                        <div class="col-4 mid">
+                                            <img src="./assets/images/newyear.png" class="d-block w-100" alt="...">
+                                            <p class ="all-rank">New Year</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Slider-2 -->
+
+                    <!-- Begin Album -->
+                    <div class="row mt-5 mb-2">
+                        <div class="col-10">
+                            <h3 class="title">Album mới</h3>
+                        </div>
+                        <div class="col-2">
+                            <a class="float-end my-sub-link" href="#">Xem tất cả</a>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/superkickparty.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Superkick Party</a>
+                                    <a class="sub-txt my-link" href="#">Meat Source Media
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/drip.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Drip</a>
+                                    <a class="sub-txt my-link" href="#">Valorant
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/tamkhaubatnhat.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Tâm Khẩu Bất Nhất</a></a>
+                                    <a class="sub-txt my-link" href="#">Đại Mễ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/khacbiet.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Khác Biệt</a></a>
+                                    <a class="sub-txt my-link" href="#">Song Nhi</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/cherryblossomsareblooming.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Cherry Blossoms Are Blomming</a></a>
+                                    <a class="sub-txt my-link" href="#">Hanabie</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/yeu.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Yêu</a></a>
+                                    <a class="sub-txt my-link" href="#">7UPERCUTS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/chuithe.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Chửi Thề</a></a>
+                                    <a class="sub-txt my-link" href="#">Lưu Nghiên Phi</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/khongbaogioquenanh.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Không Bao Giờ Quên Anh</a></a>
+                                    <a class="sub-txt my-link" href="#">Lưu Ánh Loan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/baihattoiloi.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Bài Hát Tội Lỗi</a></a>
+                                    <a class="sub-txt my-link" href="#">Đại Thúc Lão Trương</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-20">
+                            <div class="box pb-5">
+                                <div class="box-img">
+                                    <a href="#">
+                                        <img src="./assets/images/thamlang.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <a class="txt txt-bold my-link" href="#">Thầm Lặng</a></a>
+                                    <a class="sub-txt my-link" href="#">Thạch Thảo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                   <!-- End Album -->
+                    <!-- Begin Video Moi Nhat -->
+                    <div class="row mt-5 mb-2">
+                        <div class="col-10">
+                            <h3 class="title">Video mới nhất</h3>
+                        </div>
+                        <div class="col-2">
+                            <a class="float-end my-sub-link" href="#">Xem tất cả</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/aichungtinhduocmai.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Ai Chung Tình Được Mãi
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Hoài Lâm
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/ladoemxuithoi.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Là Do Em Xui Thôi
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Khói
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/thuongemdengia.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Thương Em Đến Già
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Lê Bảo Bình
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/laviemday.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Là Vì Em Đấy
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Green
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/dieudangdongotngao.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Điều Dang Dở Ngọt Ngào
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Bình Lee
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/cohenvoithanhxuan.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Có Hẹn Với Thanh Xuân
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Monstar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/coemday.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Có Em Đây
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Như Việt, Dung Hoàng Phạm, ACV
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3 new-video">
+                            <div class="box-video">
+                                <video controls src="./assets/videos/justfriend.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="box-content">
+                                <a class="txt-bold my-link" href="#">
+                                    Just Friend
+                                </a>
+                                <a class="sub-txt my-link" href="#">
+                                    Nanon Korapat
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Video Moi Nhat -->
+                    <!-- End -->
+                </div>
+
+
+                <div class="col-4">
+                    <!-- Begin -->
+                    <div class="slidebar">
+                        <div class="row">
+                            <div class="col-9">
+                                <h3 class="title">Bảng xếp hạng</h3>
+                            </div>
+                            <div class="col-3">
+                                <a class="float-end my-sub-link" href="#">Nghe tất cả</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-tabs my-nav" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link txt my-link txt-bold active" id="vietnam-tab" data-bs-toggle="tab" data-bs-target="#vietnam" type="button" role="tab" aria-controls="vietnam" aria-selected="true">VIỆT NAM</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link txt txt-bold my-link" id="us-uk-tab" data-bs-toggle="tab" data-bs-target="#us-uk" type="button" role="tab" aria-controls="us-uk" aria-selected="false">US-UK</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link txt txt-bold my-link" id="k-pop-tab" data-bs-toggle="tab" data-bs-target="#k-pop" type="button" role="tab" aria-controls="k-pop" aria-selected="false">K-POP</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link txt txt-bold my-link" id="j-pop-tab" data-bs-toggle="tab" data-bs-target="#j-pop" type="button" role="tab" aria-controls="j-pop" aria-selected="false">J-POP</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="vietnam" role="tabpanel" aria-labelledby="vietnam-tab">
+
+
+                                        <!-- Tab Viet Nam -->
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+
+                                                <div class="row my-sing-rank-1">
+                                                    <div class="col-4">
+                                                        <a href="#"><img src="./assets/images/xemnhuemchangmay.jpg" alt=""></a>
+                                                        <p class="rank-first">1</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Xem Như Em Chẳng May</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Chu Thúy Quỳnh
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>1234123</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-second">2</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/ladoemxuithoi.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Là Do Em Xui Thôi</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Khói
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>639530</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-third">3</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#>"><img src="./assets/images/khongbang.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Không Bằng</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Rin
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>508231</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">4</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/phanboichinhminh.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Phản Bội Chính Mình</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Quân A.P
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>480402</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">5</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/luusoemdi.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Lưu Số Em Đi</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Vũ Phụng Tiên
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>467534</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">6</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/devuong.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Đế Vương</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Dung Hoàng Phạm
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>211279</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">7</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/mangtienvechome.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Mang Tiền Về Cho Mẹ</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Đen
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>154411</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">8</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/csn.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Lỡ Hẹn Với Dòng Lam</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Thái Học
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>139137</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">9</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/gieoque.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Gieo Quẻ</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Hoàng Thùy Linh
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>137440</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">10</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/thuongemdengia.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Thương Em Đến Già</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Lê Bảo Bình
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>128372</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+
+                                    <!-- Tab US UK -->
+                                    <div class="tab-pane fade" id="us-uk" role="tabpanel" aria-labelledby="us-uk-tab">
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank-1">
+                                                    <div class="col-4">
+                                                        <a href="#"><img src="./assets/images/loveitwhenyouhateme.jpg" alt=""></a>
+                                                        <p class="rank-first">1</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Love It When You Hate Me</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Avril Lavigne
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>594712</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-second">2</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/dontbreakmyheart.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Don't Break My Heart</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                The Weeknd
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>570468</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-third">3</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/lessthanzero.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Less Than Zero</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                The Weeknd
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>521098</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">4</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/itllbeokay.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">It'll Be Okay</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Shawn Mendes
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>355914</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">5</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/christmastree.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Christmastree</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                V-BTS
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>322878</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">6</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/onmyway.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">On My Way</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Alan Walker
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>316050</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">7</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/ohmygod.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Oh My God</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Adele
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>256175</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">8</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/manofthemoon.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Man Of The Moon</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Alan Walker
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>253659</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">9</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/whenimgone.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">When I'm Gone</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Alesso
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>209671</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">10</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/istheresomeoneelse.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Is There Someone Else</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                The Weeknd
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>170768</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Tab Kpop -->
+                                    <div class="tab-pane fade" id="k-pop" role="tabpanel" aria-labelledby="k-pop-tab">
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank-1">
+                                                    <div class="col-4">
+                                                        <a href="#"><img src="./assets/images/layinlow.jpg" alt=""></a>
+                                                        <p class="rank-first">1</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Layin' Low</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Hyolyn
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>589586</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-second">2</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/dreamscometrue.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Dream Come True</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Aespa
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>566276</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-third">3</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/drawer.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Drawer</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                10cm
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>509822</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">4</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/fever.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Fever</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Changmin
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>477408</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">5</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/blessedcursed.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Blessed-Cursed</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                ENHYPEN
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>461889</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">6</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/wadada.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Wadada</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Kep1er
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>445142</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">7</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/devil.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Devil</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Changmin
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>440892</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">8</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/stepback.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Step Back</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Changmin
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>440892</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">9</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/polaroidlove.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Polaroid Love</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                ENHYPEN
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>242230</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">10</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/eleven.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Eleven</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                IVE
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>148508</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- Tab Jpop -->
+                                    <div class="tab-pane fade" id="j-pop" role="tabpanel" aria-labelledby="j-pop-tab">
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank-1">
+                                                    <div class="col-4">
+                                                        <a href="#"><img src="./assets/images/akumanoko.jpg" alt=""></a>
+                                                        <p class="rank-first">1</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Akuma no Ko</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Ai Higuchi
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>592622</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-second">2</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/koinouta.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Koi No Uta</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Shiratori Kotori
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>582382</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-third">3</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/asagakuru.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Asa Ga Kuru</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Aimer
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>549897</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">4</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/livedevil.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">LiveDevil</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Da-iCE
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>539999</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">5</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/zankyosanka.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Zankyosanka</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Aimer
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>516324</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">6</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/doughnut.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Doughnut</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Twice
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>501010</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">7</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/hadakanoyusha.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Hadaka No Yusha</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Vaundy
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>377937</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">8</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/massaranadaichi.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Massarana Daichi</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                Ai Higuchi
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>286996</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">9</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/bokuranokisetsu.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Bokura no kisetsu</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                JO1
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>206261</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bd-bottom">
+                                            <div class="col-12 py-3">
+                                                <div class="row my-sing-rank">
+                                                    <div class="col-1">
+                                                        <p class="rank-th">10</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#"><img src="./assets/images/prologue.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="name-sing">
+                                                            <p class="txt-bold dp-block"><a class="my-link" href="#">Prologue</a></p>
+                                                            <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">
+                                                                JO1
+                                                            </a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p>128372</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End BXH -->
+                        
+                        <!-- Begin BXH Upload Trong Tuan -->
+                        <div class="row py-4">
+                            <div class="col-12">
+                                <h3 class="title">BXH Upload trong tuần</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">1</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/danjustince.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">danjustince</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">116 Upload (8.2 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">54842</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">2</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/csn.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">CSN</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">75 Upload (3.9 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">20292</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">3</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/csn.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">trikiendkbg</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">15 Upload (2.9 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">12312</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">4</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/harryharridson.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Harry Harridson</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">136 Upload (6.2 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">5731</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">5</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/hoangtuan.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Hoàng Tuân</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">290 Upload (13.2 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">3519</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">6</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/tuitendanh.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Tui Tên Danh</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">33 Upload (1.5 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">1522</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">7</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/nguoivanchuyennhac.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Nguoivanchuyennhac</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">49 Upload (3.3 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">1354</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">8</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/coconut.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Coconut</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">133 Upload (7.4 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">162</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">9</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/hoangkieu.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Hoàng Kiều</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">13 Upload (1.2 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">220</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bd-bottom">
+                                <div class="col-12 py-3">
+                                    <div class="row my-sing-rank">
+                                        <div class="col-1">
+                                            <p class="rank-th">10</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#"><img class="img-round" src="./assets/images/trungduc.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="name-sing">
+                                                <p class="txt-bold dp-block"><a class="my-link" href="#">Trung Đức</a></p>
+                                                <p class="sub-txt dp-block"><a class="sub-txt my-link" href="#">13 Upload (1.5 GB)</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="txt-bold">122</p>
+                                            <p class="sub-txt txt-italic">download</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                        <!-- End BXH Upload Trong Tuan -->
+
+                        <!-- Begin Ca Si Yeu Thich -->
+                        <div class="row py-4">
+                            <div class="col-12">
+                                <h3 class="title">Ca sĩ yêu thích</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/shiratorikotori.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Shiratori</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/daice.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Da-ICE</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/vaundy.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Vaundy</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/aimer.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Aimer</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/twice.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Twice</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/aihiguchi.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Ai Higuchi</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/jo1.jpg" alt="Ca Sĩ">
+                                <p class="text-center">JO1</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/changmin.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Changmin</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/csn.jpg" alt="Ca Sĩ">
+                                <p class="text-center">10cm</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/aespa.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Aespa</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/hyolyn.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Hyolyn</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/ive.jpg" alt="Ca Sĩ">
+                                <p class="text-center">IVE</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/adele.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Adele</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/gotthebeat.jpg" alt="Ca Sĩ">
+                                <p class="text-center">GOT The Beat</p>
+                            </div>
+                            <div class="col-4 favorite-singer px-1 py-1">
+                                <img src="./assets/images/shawnmendes.jpg" alt="Ca Sĩ">
+                                <p class="text-center">Shawn Mendes</p>
+                            </div>
+
+                        </div>
+                        <!-- End Ca Si Yeu Thich -->
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cotainer-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer py-3">
+                    <div class="row footer-top mx-5">
+                        <div class="col-12">
+                            <ul>
+                                <h4 class="text-white txt-bold">Bảng Xếp Hạng</h4>
+                                <li ><a href="#">BXH Hôm Nay</a></li>
+                                <li ><a href="#">BXH Tuần Này</a></li>
+                                <li ><a href="#">BXH Tháng 11</a></li>
+                                <li ><a href="#">BXH Năm 2017</a></li>
+                                <li ><a href="#">BXH Năm 2018</a></li>
+                            </ul>
+
+                            <ul>
+                                <h4 class="text-white txt-bold">Video Clip</h4>
+                                <li ><a href="#">Video Việt Nam</a></li>
+                                <li ><a href="#">Video US-UK</a></li>
+                                <li ><a href="#">Video Hoa</a></li>
+                                <li ><a href="#">Video Hàn</a></li>
+                                <li ><a href="#">Video Live</a></li>
+                                <li ><a href="#">Video Hài</a></li>
+                                <li ><a href="#">Video Nhật</a></li>
+                                <li ><a href="#">Video Pháp</a></li>
+                                <li ><a href="#">Video Nước Khác</a></li>
+                            </ul>
+
+                            <ul>
+                                <h4 class="text-white txt-bold">Beat, Playback</h4>
+                                <li ><a href="#">Playback Việt Nam</a></li>
+                                <li ><a href="#">Playback US-UK</a></li>
+                                <li ><a href="#">Playback Hoa</a></li>
+                                <li ><a href="#">Playback Hàn</a></li>
+                                <li ><a href="#">Playback Nhật</a></li>
+                                <li ><a href="#">Playback Pháp</a></li>
+                                <li ><a href="#">Playback Nước Khác</a></li>
+                            </ul>
+
+                            <ul>
+                                <h4 class="text-white txt-bold">Nhạc Việt Nam</h4>
+                                <li ><a href="#">Nhạc Pop, Rock</a></li>
+                                <li ><a href="#">Nhạc Rap, Hiphop</a></li>
+                                <li ><a href="#">Nhạc Dance, Remix</a></li>
+                                <li ><a href="#">Nhạc Truyền Thống</a></li>
+                            </ul>
+
+                            <ul>
+                                <h4 class="text-white txt-bold">Nhạc US-UK</h4>
+                                <li ><a href="#">Nhạc Pop, Rock</a></li>
+                                <li ><a href="#">Nhạc Rap, Hiphop</a></li>
+                                <li ><a href="#">Nhạc Dance, Remix</a></li>
+                            </ul>
+
+                            <ul>
+                                <h4 class="text-white txt-bold">Nhạc Hoa</h4>
+                                <li ><a href="#">Nhạc Pop, Rock</a></li>
+                                <li ><a href="#">Nhạc Rap, Hiphop</a></li>
+                                <li ><a href="#">Nhạc Dance, Remix</a></li>
+                            </ul>
+
+                            <ul>
+                                <h4 class="text-white txt-bold">Nhạc Hàn</h4>
+                                <li ><a href="#">Nhạc Pop, Rock</a></li>
+                                <li ><a href="#">Nhạc Rap, Hiphop</a></li>
+                                <li ><a href="#">Nhạc Dance, Remix</a></li>
+                            </ul>
+
+                            <ul>
+                                <h4 class="text-white txt-bold">Nhạc Nước Khác</h4>
+                                <li ><a href="#">Nhạc Pop, Rock</a></li>
+                                <li ><a href="#">Nhạc Rap, Hiphop</a></li>
+                                <li ><a href="#">Nhạc Dance, Remix</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row footer-bottom">
+                        <div class="col-12">
+                            <ul>
+                                <li>Giới Thiệu</li>
+                                <li>Góp Ý</li>
+                                <li>Nội Quy Và Chính Sách Chia Sẻ Nhạc</li>
+                                <li>Page generation time: 0.07 seconds</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- JavaScript Bootstrap -->
+    <script src="./assets/bootstrapjs/bootstrap.bundle.min.js"></script>
+</body>
+</html>
